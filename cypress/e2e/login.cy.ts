@@ -15,5 +15,7 @@ describe('LOGIN PAGE', () => {
   it.only('LOGIN TEST WITH Class/POM ( using page object)', () => {
     LoginPage.loginMethod()
     cy.contains('Log out')
+    cy.log(LoginPage.password)
+    console.log(LoginPage.password)
   })
 })
