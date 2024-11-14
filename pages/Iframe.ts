@@ -2,6 +2,10 @@ class Iframe {
     private iframeID:string = "#frame1";
     private ifBody:string = "body"
 
+    visit(){
+        cy.visit('/nestedframes');
+    }
+    
     getIframe(){
         cy.get(this.iframeID).then(iFrame=>{
             const body = iFrame.contents().find(this.ifBody);
