@@ -8,6 +8,10 @@ describe('LOGIN WITH COOKIES', () => {
         })
     });
 
+    beforeEach(() => {
+        cy.intercept({resourceType: /xhr|fetch/}, {log: false})
+    });
+
     //check if you stay logged in
     it('create cookies with cy.session',() =>{
         cy.visit('/login')
