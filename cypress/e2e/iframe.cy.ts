@@ -1,7 +1,7 @@
 import {IframePage} from '../../pages/Iframe'
 
-describe('', () => {
-    it('', () => {
-        
+describe('IFRAME', () => {
+    it('test iframe', () => {
+        IframePage.getIframe();
     });
 });
